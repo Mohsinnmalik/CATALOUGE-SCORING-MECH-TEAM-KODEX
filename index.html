@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Watch Catalog Scoring</title>
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <h1 class="site-title">Watch Catalog</h1>
+                <button id="termsBtn">Terms and Services</button>
+            </div>
+        </header>
+        <main>
+            <section id="catalog" class="catalog-container wrap-cards">
+                <!-- Watches will be dynamically inserted here -->
+            </section>
+            <section id="selection">
+                <div class="container">
+                    <h2>Compare Watches:</h2>
+                    <div class="selection-container">
+                        <select id="watchSelect" multiple></select>
+                        <input type="text" id="searchInput" placeholder="Search...">
+                    </div>
+                    <button onclick="compareWatches()">Compare</button>
+                </div>
+            </section>
+            <section id="result"></section>
+        </main>
+    </div>
+
+    <!-- Modal for Terms and Services -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Terms and Services</h2>
+        <p>Welcome to Online Catalog Scoring Mech!</p>
+        <p>These terms and conditions outline the rules and regulations for the use of Online Catalog Scoring Mech's Website, located at [Your Website URL].</p>
+        <p>By accessing this website, we assume you accept these terms and conditions. Do not continue to use Online Catalog Scoring Mech if you do not agree to take all of the terms and conditions stated on this page.</p>
+        <h3>Cookies</h3>
+        <p>We employ the use of cookies. By accessing Online Catalog Scoring Mech, you agree to use cookies in accordance with Online Catalog Scoring Mech's Privacy Policy.</p>
+        <h3>License</h3>
+        <p>Unless otherwise stated, Online Catalog Scoring Mech and/or its licensors own the intellectual property rights for all material on Online Catalog Scoring Mech. All intellectual property rights are reserved. You may access this from Online Catalog Scoring Mech for your personal use, subject to restrictions set in these terms and conditions.</p>
+        <h3>Restrictions</h3>
+        <p>You are specifically restricted from all of the following:</p>
+        <ul>
+            <li>publishing any Online Catalog Scoring Mech material in any other media;</li>
+            <li>selling, sublicensing, and/or otherwise commercializing any Online Catalog Scoring Mech material;</li>
+            <li>publicly performing and/or showing any Online Catalog Scoring Mech material;</li>
+            <li>using Online Catalog Scoring Mech in any way that is or may be damaging to Online Catalog Scoring Mech;</li>
+            <li>using Online Catalog Scoring Mech in any way that impacts user access to Online Catalog Scoring Mech;</li>
+            <li>using Online Catalog Scoring Mech contrary to applicable laws and regulations, or in any way may cause harm to Online Catalog Scoring Mech, or to any person or business entity.</li>
+        </ul>
+        <h3>Disclaimer</h3>
+        <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
+        <ul>
+            <li>limit or exclude our or your liability for death or personal injury;</li>
+            <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+            <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+            <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+        </ul>
+        <h3>Variation of Terms</h3>
+        <p>Online Catalog Scoring Mech is permitted to revise these terms at any time as it sees fit, and by using this website you are expected to review these terms regularly.</p>
+        <h3>Assignment</h3>
+        <p>Online Catalog Scoring Mech is allowed to assign, transfer, and subcontract its rights and/or obligations under these terms without any notification. However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these terms.</p>
+        <h3>Entire Agreement</h3>
+        <p>These terms constitute the entire agreement between Online Catalog Scoring Mech and you in relation to your use of this website and supersede all prior agreements and understandings.</p>
+        <h3>Governing Law & Jurisdiction</h3>
+        <p>These terms will be governed by and interpreted in accordance with the laws of the State of [Your State], and you submit to the non-exclusive jurisdiction of the state and federal courts located in [Your State] for the resolution of any disputes.</p>
+    </div>
+</div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Terms and Services content goes here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
